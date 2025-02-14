@@ -10,16 +10,51 @@ body {
     text-align: center;
 }
 
+.menu {
+    background-color: #6a3e19; 
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: #ffd700; 
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu ul li a:hover {
+    color: #f4a261; 
+}
+
+
 .fondo-restaurante {
     background: url('../../imagenes/restaurante.jpg') center/cover no-repeat;
-    height: 200px; 
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
+    color: white;
     font-size: 24px;
     font-weight: bold;
 }
+
 
 .contenedor {
     display: flex;
@@ -28,8 +63,9 @@ body {
     margin: 50px auto;
 }
 
+
 .card {
-    background-color: #ddd;
+    background-color: #f4a261;
     width: 200px;
     height: 200px;
     display: flex;
@@ -40,15 +76,16 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+
 .btn {
     margin-top: 20px;
     padding: 10px 15px;
-    background-color: #007bb5;
+    background-color: #6a3e19;
     color: white;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .btn:hover {
-    background-color: #005f8a;
+    background-color: #4f2c12;
 }
