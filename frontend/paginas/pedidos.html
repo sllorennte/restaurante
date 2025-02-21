@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Pedidos</title>
+    <link rel="stylesheet" href="../estilos/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div class="logo">
+                <li><a href="index.html"><img src="../../imagenes/logorestaurante.png" alt="Logo Restaurante"></a>
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="mesas.html">Mesas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="imagen-principal">
+        <h1>BIENVENIDO A NUESTRO RESTAURANTE</h1>
+    </section>
+
+    <main>
+        <section class="menu-pedidos">
+            <h2>Menú Disponible</h2>
+            <ul id="listaPedidos">
+                <li><button onclick="añadirPedido('Plato 1')">+</button> <span>Plato 1</span></li>
+                <li><button onclick="añadirPedido('Plato 2')">+</button> <span>Plato 2</span></li>
+                <li><button onclick="añadirPedido('Plato 3')">+</button> <span>Plato 3</span></li>
+                <li><button onclick="añadirPedido('Plato 4')">+</button> <span>Plato 4</span></li>
+                <li><button onclick="añadirPedido('Plato 5')">+</button> <span>Plato 5</span></li>
+                <li><button onclick="añadirPedido('Plato 6')">+</button> <span>Plato 6</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="../scripts/pedidos.js"></script>
+</body>
+</html>

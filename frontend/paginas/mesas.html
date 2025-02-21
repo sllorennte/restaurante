@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar Mesa</title>
+    <link rel="stylesheet" href="../estilos/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div class="logo">
+                <li><a href="index.html"><img src="../../imagenes/logorestaurante.png" alt="Logo Restaurante"></a>
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reserva">
+            <h2>Reservar Mesa</h2><br><br>
+            <form id="formMesa">
+                <label for="numeroMesa">Número de Mesa:</label>
+                <input type="number" id="numeroMesa" required>
+                <label for="comensales">Número de Comensales:</label>
+                <input type="number" id="comensales" required>
+                <button type="submit" class="btn">Reservar</button>
+            </form>
+        </section>
+
+        <section class="lista-mesas">
+            <h2>Reservas Pendientes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mesa</th>
+                        <th>Comensales</th>
+                        <th>Estado</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="listaMesas"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="../scripts/mesas.js"></script>
+</body>
+</html>
